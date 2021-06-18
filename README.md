@@ -19,7 +19,8 @@ Haplotyping of long Oxford Nanopore reads
     - path_to_pepper_model --> path to the pepper model PEPPER_SNP_R941_ONT_V4.pkl
     - Margin_json --> path to Margin parameters
 
-2. If you want to run all the pipeline until the haplotypes: *#snakemake --cores 24 out/flye_hap1/{sample}_assembly.log* and *#snakemake --cores 24 out/flye_hap2/{sample}_assembly.log*
+2. If you want to run all the pipeline until the haplotypes: 
+    -*#snakemake --cores 24 out/flye_hap1/{sample}_assembly.log* 
+    -*#snakemake --cores 24 out/flye_hap2/{sample}_assembly.log*
 
-
-
+3. If you want to run the pipeline step by step just run until the correct output
