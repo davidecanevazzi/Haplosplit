@@ -1,0 +1,6 @@
+Fastq_file,data/A.fastq
+Reference,data/chr6.fa
+Name_of_gene,HLA_A
+Position,chr6:29941532-29946870
+Path_to_pepper_model,../../../../../scratch/production/DAT/apps/PEPPER_MARGIN_DEEPVARIANT/0.4/pepper_models/PEPPER_SNP_R941_ONT_V4.pkl -o output/pepper_snp
+Margin_json,../../../../../apps/MARGIN/2.2.2/params/misc/allParams.ont_haplotag.json 
