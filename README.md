@@ -8,5 +8,8 @@ Setup on the cluster:
   
 2. Then load some necessary modules:  #module load PEPPER MARGIN
 
+---
+How to run
+
 
 
