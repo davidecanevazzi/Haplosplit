@@ -11,6 +11,7 @@ Haplotyping of long Oxford Nanopore reads
 ---
 ## How to run
 
-
+1. Change the configuration file data.txt, it comprehend 6  fields:
+  - fastq_file --> path to the fastq file
 
 
