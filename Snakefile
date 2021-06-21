@@ -76,7 +76,7 @@ rule samtools_sort:
     output:
         "out/{sample}.sorted.bam"
     shell:
-        "santools sort -@ 12 {input} -o {output}"
+        "samtools sort -@ 12 {input} -o {output}"
 
 rule samtools_index:
     input:
