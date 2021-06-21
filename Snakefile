@@ -89,7 +89,6 @@ rule samtools_index:
 rule gene_selection:
     input:
         bam= "out/{sample}.sorted.bam",
-        bai= "out/{sample}.sorted.bam.bai",
         log="log/{sample}.index.txt"
     output:
         "out/{sample}_region.bam"
