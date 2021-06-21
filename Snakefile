@@ -1,6 +1,6 @@
 ###############################################################################
 
-#######################Snakefile tonsil atlas Multi    ########################
+################################# Haplosplit ##################################
 
 ###############################################################################
 
@@ -161,27 +161,26 @@ rule split:
         ind="out/logs/{sample}_index2.log",
         bam="out/logs/{sample}_margin_haplotag.log"
     output:
-        "out/{sample}_region.TAG_HP_1.bam",
-        "out/{sample}_region.TAG_HP_2.bam"
+        "out/logs/{sample}_split.log"
     shell:
-        "bamtools split -in out/MARGIN_PHASED.PEPPER_SNP_MARGIN.haplotagged.bam -tag HP"
+        "bamtools split -in out/MARGIN_PHASED.PEPPER_SNP_MARGIN.haplotagged.bam -tag HP|tee {output}"
 
 rule to_fasta_A1:
     input:
-        "out/{sample}_region.TAG_HP_1.bam"
+        "out/logs/{sample}_split.log"
     output:
         "out/{sample}_region_hap1.fa"
     shell:
-        "samtools fasta  {input}  -0 {output}"
+        "samtools fasta out/MARGIN_PHASED.PEPPER_SNP_MARGIN.haplotagged.TAG_HP_1.bam -0 {output}"
 
 
 rule to_fasta_A2:
     input:
-        "out/{sample}_region.TAG_HP_2.bam"
+        "out/logs/{sample}_split.log"
     output:
         "out/{sample}_region_hap2.fa"
     shell:
-        "samtools fasta  {input}  -0 {output}"
+        "samtools fasta out/MARGIN_PHASED.PEPPER_SNP_MARGIN.haplotagged.TAG_HP_2.bam -0 {output}"
 
 rule flye_A_1:
     input:
