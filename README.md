@@ -26,7 +26,12 @@ module load PEPPER MARGIN
     - Margin_json --> path to Margin parameters
 
 2. If you want to run all the pipeline until the haplotypes: 
-    - *#snakemake --cores 24 out/flye_hap1/{sample}_assembly.log* 
-    - *#snakemake --cores 24 out/flye_hap2/{sample}_assembly.log*
+
+
+```
+snakemake --cores 24 out/flye_hap1/{sample}_assembly.log
+snakemake --cores 24 out/flye_hap2/{sample}_assembly.log
+```
+
 
 3. If you want to run the pipeline step by step just run until the correct output
