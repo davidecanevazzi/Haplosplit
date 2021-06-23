@@ -35,4 +35,4 @@ snakemake --cores {number _of_cores} out/{sample}_haplo.log
 The 2 final contigs are going to be in  ```out/flye_hap2/``` and ```out/flye_hap1/```
 
 
-3. If you want to run the pipeline step by step just run until the correct output
+3. If you want you can run the pipeline until a specific step step by changing the requested output.
