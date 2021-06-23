@@ -29,8 +29,7 @@ module load PEPPER MARGIN
 
 
 ```
-snakemake --cores 24 out/flye_hap1/{sample}_assembly.log
-snakemake --cores 24 out/flye_hap2/{sample}_assembly.log
+snakemake --cores {number _of_cores} out/{sample}_haplo.log
 ```
 
 
