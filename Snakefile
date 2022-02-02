@@ -198,7 +198,8 @@ rule flye_A_2:
         "flye --nano-raw {input} --out-dir out/flye_hap2/ --threads 4 -m 1000 -i 2|tee {output}"
         
         
- rule end:
+        
+rule end:
     input:
         h1="out/flye_hap1/{sample}_assembly.log",
         h2="out/flye_hap2/{sample}_assembly.log"
