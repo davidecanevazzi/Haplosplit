@@ -8,7 +8,7 @@ Haplotyping of long Oxford Nanopore reads
 ```
 conda env create -f environment.yaml
 ```
-2. Then load some necessary modules:  module load PEPPER MARGIN
+2. Then load some necessary modules: PEPPER and MARGIN
 ```
 module load PEPPER MARGIN
 ```
