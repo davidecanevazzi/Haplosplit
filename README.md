@@ -29,6 +29,7 @@ module load PEPPER MARGIN
 
 
 ```
+export HDF5_USE_FILE_LOCKING='FALSE'
 snakemake --cores {number _of_cores} out/{sample}_haplo.log
 ```
 
